@@ -1,0 +1,36 @@
+.player {
+  &-list {
+    &-header{
+      font-size: 20px;
+      text-align: left;
+      color: $night-blue;
+      padding: 0 0 20px 0;
+    }
+    &-wrapper {
+      width: 100%;
+      display: flex;
+      padding: 20px;
+      border-radius: 8px;
+      box-sizing: border-box;
+      flex-direction: column;
+      background-color: #ffffff;
+      max-width: calc(33% - 10px);
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+      .all-player-list{
+        height: 60vh;
+        overflow-y: scroll;
+
+        &.empty_list{
+          display: flex;
+          text-align: center;
+          align-items: center;
+        }
+      }
+
+      @media (max-width: 768px) {
+        max-width: 100%;
+        margin-top: 20px;
+      }
+    }
+  }
+}
