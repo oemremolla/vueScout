@@ -1,4 +1,4 @@
-This project is the e commerce case. Created with vue.
+This project is the scout case. Created with vue.
 
 ### Tech Stack
 
